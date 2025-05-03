@@ -4,7 +4,8 @@ const ASSETS_TO_CACHE = [
   "/index.html",
   "src/main.tsx",
   "/src/assets/TitleGame.png",
-  "https://api-game.bloque.app/game/leaderboard"
+  "https://api-game.bloque.app/game/leaderboard",
+  "https://api-game.bloque.app/game/market"
 ];
 
 self.addEventListener("install", (event) => {
@@ -34,7 +35,6 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   
-  // Estrategia: network-first → cache update
   event.respondWith(
     fetch(event.request)
       .then((response) => {

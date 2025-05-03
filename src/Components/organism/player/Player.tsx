@@ -14,7 +14,7 @@ interface PlayerProps {
 
 const Player = ({ name, exp, gold, rank, isPoisoned }: PlayerProps) => {
   return (
-    <div className="card-player cursor-pointer">
+    <div className="card-player cursor-pointer px-1 py-2 md:px-8 md:py-2">
       <div className="flex mx-auto justify-between items-center w-full h-full gap-1 md:gap-4">
         <div className="flex items-center gap-1 md:gap-4">
         <h1 className="player-name text-3xl" data-text={rank}>
@@ -32,7 +32,7 @@ const Player = ({ name, exp, gold, rank, isPoisoned }: PlayerProps) => {
           <div className="gold-icon bg-orange-950 rounded-full p-1">
             <CircleStackIcon className="text-amber-300" />
           </div>
-          <p className="text-base md:text-lg gold-ammount">{gold}</p>
+          <p className="text-sm md:text-lg gold-ammount">{gold}</p>
           {isPoisoned && (
           <BeakerIcon className="text-lime-500 w-8 bg-orange-50 shadow-xl/30 rounded-full p-1" />
         )}
