@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ItemShop.css";
+import "./itemShop.css";
 import potion from "../../../assets/potion.png";
 import potion2 from "../../../assets/potion2.png";
 import fishingRod from "../../../assets/enhancedFishingRod.png";
