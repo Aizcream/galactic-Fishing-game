@@ -94,7 +94,6 @@
   box-shadow: inset 0px 0px 10px #00000080, 0px 0px 10px #4295ec, 0px 0px 0px 3px #daecff;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 }
 .white-circle {
   background-color: #fff;

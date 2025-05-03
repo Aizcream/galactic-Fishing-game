@@ -48,7 +48,7 @@ const Home = () => {
           src={logo}
           alt="Galactic Fishing Game Title"
         />
-        <div className="flex gap-6 pt-7">
+        <div className="flex gap-6 pt-7 flex-col md:flex-row">
           {Buttons.map((button, i) => (
             <HomeButton 
               key={i} 

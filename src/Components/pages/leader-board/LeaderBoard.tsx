@@ -81,7 +81,6 @@ const LeaderBoard = () => {
                   xp={player.xp}
                   rank={player.level}
                   isInfected={player.isInfected}
-                  description={player.emojiDescription}
                   image={topImages[idx]
                   }
                 />

@@ -18,7 +18,9 @@
   .animate-delay-500 {
     animation-delay: 500ms !important;
   }
-
+  .animate-delay-700 {
+    animation-delay: 700ms !important;
+  }
   .animate-delay-1000 {
     animation-delay: 1000ms !important;
   }

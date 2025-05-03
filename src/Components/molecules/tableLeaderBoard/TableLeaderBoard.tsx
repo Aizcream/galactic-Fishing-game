@@ -18,7 +18,7 @@ interface TableLeaderBoardProps {
 const TableLeaderBoard: React.FC<TableLeaderBoardProps> = ({ players }) => {
   console.log(players);
   return (
-    <div className="table-leaderboard top-1/3 md:top-4/10 w-9/10 md:w-1/2">
+    <div className="table-leaderboard top-1/3 md:top-4/10 w-9/10 md:w-1/2 slide-in-bottom animate-delay-200">
       <div className="flex flex-col mx-auto justify-center items-center w-full h-full pt-20">
         <RibbonCurvedText name="Leader Board" isLeaderboard={true} />
         <div className="flex flex-col items-center w-full h-full overflow-scroll gap-4">
