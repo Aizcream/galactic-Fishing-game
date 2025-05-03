@@ -1,5 +1,5 @@
 // src/components/pages/Shop.tsx
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Shop.css";
 import roof from "../../../assets/roof.png";
 import title from "../../../assets/TitleGame.png";

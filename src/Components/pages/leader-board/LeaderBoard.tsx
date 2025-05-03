@@ -1,5 +1,5 @@
 // src/components/pages/LeaderBoard.tsx
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./LeaderBoard.css";
 import PodiumCard from "../../organism/podiumCard/PodiumCard";
 import top1 from "../../../assets/TopPlayers/top1.png";
