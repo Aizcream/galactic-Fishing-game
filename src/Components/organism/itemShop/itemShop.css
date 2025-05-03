@@ -1,0 +1,20 @@
+.item{
+    background: radial-gradient(at center, #FACC22, #F83600);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+    box-shadow: inset 0px 0px 0px 5px #ffffff, inset 0px 0px 12px 5px #000000, 0px 0px 8px 0px #000000b5;
+    position: relative;
+}
+
+.info-container{
+    align-items: center;
+    background: radial-gradient(at center, #fa2222, #f80000);
+    border-radius: 12px;
+    bottom: -14%;
+    box-shadow: inset 0px 0px 0px 5px #ffffff, inset 0px 0px 12px 5px #000000;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+}

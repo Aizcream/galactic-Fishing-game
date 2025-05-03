@@ -1,0 +1,47 @@
+.card-player {
+  background-color: #3684d3;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px 0px #75a9e1 inset, 0px 3px 0px 2px #0f27a8, 0px 4px 6px 2px rgb(0 0 0 / 32%);
+  width: 90%;
+
+}
+
+
+
+.player-name {
+    -webkit-text-stroke: 3px #343434;
+    color: #ffffff00;
+    font-weight: 800;
+    paint-order: stroke fill;
+    position: relative;
+    text-shadow: 0px -1px 0px #ffffff;
+    z-index: 1;
+}
+
+.player-name::before {
+    -webkit-text-stroke: 3px #8e4d07;
+    color: #ffffff00;
+    content: attr(data-text);
+    position: absolute;
+    text-shadow: 0px 0px 0px rgb(0 0 0);
+    top: 1px;
+    z-index: -1;
+}
+
+.gold-ammount{
+    background-color: #dc981a;
+    border-radius: 7px;
+    border: 2px solid #3b1d0c;
+    box-shadow: inset 0px 0px 7px #57340099;
+    color: white;
+    font-weight: 600;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.gold-icon{
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
