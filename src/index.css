@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+@import "../src/styles/animations.css";
+
+@theme {
+  --font-roboto: "Manrope", sans-serif;
+  --animation-delay-100: 100ms;
+  --animation-delay-200: 200ms;
+}
+
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: var(--animation-delay-100) !important;
+  }
+  .animate-delay-200 {
+    animation-delay: var(--animation-delay-200) !important;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms !important;
+  }
+
+  .animate-delay-1000 {
+    animation-delay: 1000ms !important;
+  }
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  overscroll-behavior-y: none;
+}

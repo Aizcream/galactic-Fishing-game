@@ -1,0 +1,19 @@
+.ribbon-container {
+  position: relative;
+}
+
+.name-player {
+  color: #fff;
+  font-weight: 800;
+  left: 50%;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  transform: translate(-50%, 15%);
+}
+
+
+.leader-board__title {
+  white-space: nowrap;
+  transform: translate(-50%, 10%);
+}
