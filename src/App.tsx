@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Components/pages/home/Home';
 import LeaderBoard from './Components/pages/leader-board/LeaderBoard';
 import Shop from './Components/pages/shop/Shop';
-import OnlineStatus from './Components/atoms/onlineStatus/onlineStatus';
+import OnlineStatus from './Components/atoms/onlineStatus/OnlineStatus';
+
 
 
 const App = () => {
