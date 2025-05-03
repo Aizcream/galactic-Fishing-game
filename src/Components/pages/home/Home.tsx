@@ -3,7 +3,7 @@ import { TrophyIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
 import HomeButton from "../../atoms/homeButton/HomeButton";
 import "./Home.css";
 import { useNavigate } from "react-router-dom"; 
-
+import logo from "../../../assets/TitleGame.png"; 
 const Home = () => {
   const starContainerRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate(); 
@@ -45,7 +45,7 @@ const Home = () => {
 
       <div className="flex flex-col items-center justify-center h-full relative z-10">
         <img className="slide-in-elliptic-top-fwd animate-delay-200"
-          src="src/assets/TitleGame.png"
+          src={logo}
           alt="Galactic Fishing Game Title"
         />
         <div className="flex gap-6 pt-7">

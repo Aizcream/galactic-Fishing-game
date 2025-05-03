@@ -8,6 +8,7 @@ import top3 from "../../../assets/TopPlayers/top3.png";
 import TableLeaderBoard from "../../molecules/tableLeaderBoard/TableLeaderBoard";
 import { fetchFromAPI } from "../../../services/apiService";
 import Loader from "../../molecules/loader/Loader";
+import logo from "../../../assets/TitleGame.png";
 
 const topImages = [top1, top2, top3];
 
@@ -57,7 +58,7 @@ const LeaderBoard = () => {
         <div className="flex flex-col items-center justify-start h-full relative z-10 gap-10 w-9/10 md:w-1/2">
           <img
             className="w-70 slide-in-elliptic-top-fwd pt-1"
-            src="src/assets/TitleGame.png"
+            src={logo}
             alt="Galactic Fishing Game Title"
           />
 
@@ -74,11 +75,15 @@ const LeaderBoard = () => {
               {topPlayers.map((player, idx) => (
                 <PodiumCard
                   key={player.username}
-                  position={idx + 1}
+                  position={player.rank}
                   name={player.username}
-                  score={player.xp}
+                  score={player.gold}
                   xp={player.xp}
-                  image={topImages[idx]}
+                  rank={player.level}
+                  isInfected={player.isInfected}
+                  description={player.emojiDescription}
+                  image={topImages[idx]
+                  }
                 />
               ))}
             </div>

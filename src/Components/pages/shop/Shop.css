@@ -30,6 +30,11 @@
     width: 85%;
 }
 
+.market{
+  font-size: 4rem;
+  color: #ff8f2a;
+  text-shadow: 0px 4px 3px #6b0603, 0px 7px #965316;
+}
 .container-wood::before{
     border-radius: 16px;
     bottom: 4px;

@@ -46,10 +46,11 @@
 }
 
 .card-back {
-  background-color: #fff;
-  transform: rotateY(180deg);
-  padding: 20px;
+  background: radial-gradient(at center top, #4587ff, #081e46);
+  box-shadow: -1px 5px 7px #0000008f, inset 0px 1px 0px #ffffff, inset 0px 0px 12px #6c83fc;
   box-sizing: border-box;
+  padding: 20px;
+  transform: rotateY(180deg);
 }
 
 .card-inner::after {
@@ -87,7 +88,14 @@
   top: 10%;
   width: 80%;
 }
-
+.stats{
+  background: #1a2643;
+  border-radius: 1rem;
+  box-shadow: inset 0px 0px 10px #00000080, 0px 0px 10px #4295ec, 0px 0px 0px 3px #daecff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .white-circle {
   background-color: #fff;
   border-radius: 100%;

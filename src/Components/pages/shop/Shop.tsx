@@ -45,10 +45,10 @@ const Shop = () => {
         src={title}
         alt="Galactic Fishing Game Title"
       />
-      <h1 className="text-2xl mb-4 text-white font-extrabold">Market</h1>
+      <h1 className="text-2xl text-white font-extrabold market tracking-in-expand animate-delay-1000">Market</h1>
 
       <div className="flex flex-col items-center scale-in-center animate-delay-1000">
-        <img src={roof} alt="roof" className="relative z-3 mb-6" />
+        <img src={roof} alt="roof" className="relative z-3" />
         <div className="container-wood grid gap-y-10 mt-4 justify-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
           {items.map((item) => (
             <ItemShop
