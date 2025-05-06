@@ -9,7 +9,6 @@
 
 
 .player-name {
-    -webkit-text-stroke: 3px #343434;
     color: #ffffff00;
     font-weight: 800;
     paint-order: stroke fill;

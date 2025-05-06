@@ -50,7 +50,6 @@ const LeaderBoard = () => {
 
   return (
     <div className="relative min-h-screen">
-      {/* Contenido principal siempre visible */}
       <div className="container-leaderboard">
         <div className="rounded-full absolute rank h-16">
           <p>{"<"}</p>
@@ -62,14 +61,12 @@ const LeaderBoard = () => {
             alt="Galactic Fishing Game Title"
           />
 
-          {/* Si hay error, lo mostramos aquí */}
           {error && (
             <div className="text-red-500 text-center">
               Error cargando leaderboard: {error}
             </div>
           )}
 
-          {/* Tarjetas de Podio */}
           {!error && (
             <div className="grid grid-cols-3 gap-6 mt-4 container-cards justify-items-center">
               {topPlayers.map((player, idx) => (
@@ -88,17 +85,14 @@ const LeaderBoard = () => {
             </div>
           )}
 
-          {/* Tabla */}
           {!error && leaderboardData && (
             <TableLeaderBoard players={leaderboardData.players.slice(3)} />
           )}
         </div>
       </div>
 
-      {/* Overlay Loader */}
       {loading && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
-          {/* Este div debe aplicar el desenfoque de tu Loader */}
           <Loader />
         </div>
       )}
